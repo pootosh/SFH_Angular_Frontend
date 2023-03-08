@@ -1,20 +1,18 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, NgForm } from '@angular/forms';
+
 @Component({
   selector: 'app-header',
+
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
+
 })
 export class HeaderComponent implements OnInit {
 
-  // @ViewChild('sideNav') sideNav : any;
-  // width= '0px'
 
-  // openNav(){
-  //   this.width="250px"
-
-  // }
-
+  sideBarWidth= '0';
+  sideBarMarginLeft= '0'
   collapse:boolean= true;
   myControl: string = 'AdityaserachForm'
   serachForm: FormGroup;
@@ -37,6 +35,13 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(){
 
+  }
+
+  openSideBar(){
+    this.sideBarWidth= '100%'
+  }
+  closeNav(){
+    this.sideBarWidth= '0px'
   }
 
 }

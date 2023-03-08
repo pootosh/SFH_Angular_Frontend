@@ -16,7 +16,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 // import { MatCardModule } from '@angular/material/Card';
 import {MatAutocompleteModule} from '@angular/material/autocomplete'
-import { MatIconModule} from '@angular/material/icon'
+import { MatIconModule} from '@angular/material/icon';
+import { DropdownDirective } from './shared/directive/dropdown.directive';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DropdownComponent } from './shared/common/dropdown/dropdown.component'
 
 
 @NgModule({
@@ -25,7 +28,9 @@ import { MatIconModule} from '@angular/material/icon'
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    ProductsComponent
+    ProductsComponent,
+    DropdownDirective,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,8 @@ import { MatIconModule} from '@angular/material/icon'
     MatAutocompleteModule,
     // MatCardModule,
     ReactiveFormsModule,
-    MatIconModule
+    MatIconModule,
+    NgbModule
 
 
   ],
