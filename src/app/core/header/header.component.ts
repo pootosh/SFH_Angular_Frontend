@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { FormControl, FormGroup, NgForm } from '@angular/forms';
 
 @Component({
@@ -17,7 +17,8 @@ export class HeaderComponent implements OnInit {
   myControl: string = 'AdityaserachForm'
   serachForm: FormGroup;
   options= [1,2,3,4];
-  searchControl: FormControl
+  searchControl: FormControl;
+  @ViewChild('searchBar') searchBar: ElementRef;
 
   stateGroupOptions = [
     {names: 'Aditya', letter: 'Singh'},
@@ -30,6 +31,7 @@ export class HeaderComponent implements OnInit {
     })
 
     this.searchControl =  new FormControl(null)
+    this.searchBar = new ElementRef('')
 
   }
 
@@ -42,6 +44,9 @@ export class HeaderComponent implements OnInit {
   }
   closeNav(){
     this.sideBarWidth= '0px'
+  }
+  searchEnter(){
+    console.log(this.searchBar.nativeElement.value)
   }
 
 }

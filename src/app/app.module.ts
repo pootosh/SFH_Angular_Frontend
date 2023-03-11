@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { HeaderComponent } from './core/header/header.component';
 import { HomeComponent } from './core/home/home.component';
 import { ProductsComponent } from './shared/products/products.component';
-
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { DropdownComponent } from './shared/common/dropdown/dropdown.component';
 
 @NgModule({
@@ -32,7 +30,8 @@ import { DropdownComponent } from './shared/common/dropdown/dropdown.component';
 
     ReactiveFormsModule,
     MatIconModule,
-    NgbModule,
+
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],

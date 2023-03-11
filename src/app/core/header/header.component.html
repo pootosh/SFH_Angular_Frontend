@@ -1,5 +1,5 @@
-<nav class="navbar">
-  <div class="container-fluid py-2" style="background-color: lightslategrey" data-bs-auto-close="inside">
+<nav class="navbar py-0" style="position: sticky; top:0;">
+  <div class="py-2 ps-2" style="background-color: lightslategrey" data-bs-auto-close="inside" >
     <div id="mySidebar" class="sidebar" [style]="{ width: sideBarWidth }">
       <a href="javascript:void(0)" class="closebtn" (click)="closeNav()"
         >&times;</a
@@ -11,7 +11,7 @@
     </div>
 
     <div class="row">
-      <div class="col-1">
+      <div class="col-1" style="margin-top: 0.1rem;">
         <a (click)="openSideBar()">
           <span class="navbar-toggler-icon text-color-light"></span>
         </a>
@@ -22,25 +22,10 @@
       </div>
 
       <div class="col-6">
-        <div
-          class="custom-wrapper-example"
-          matAutocompleteOrigin
-          #origin="matAutocompleteOrigin"
-        >
-          <input
-            class="form-control"
-            matInput
-            [formControl]="searchControl"
-            [matAutocomplete]="auto"
-            [matAutocompleteConnectedTo]="origin"
-          />
-        </div>
 
-        <mat-autocomplete #auto="matAutocomplete">
-          <mat-option *ngFor="let option of options" [value]="option">{{
-            option
-          }}</mat-option>
-        </mat-autocomplete>
+
+        <input class="form-control" type="text" placeholder="Search" aria-label="default input example" (keyup.enter)="searchEnter()" #searchBar>
+
       </div>
 
       <div class="col-1 me-3">
@@ -58,26 +43,14 @@
         </svg>
       </div>
 
-      <div class="col-1 me-3">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="2rem"
-          height="2rem"
-          fill="currentColor"
-          class="bi bi-person-circle"
-          viewBox="0 0 16 16"
-        >
-          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-          <path
-            fill-rule="evenodd"
-            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
-          />
+      <div class="col-1 me-1 mt-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2rem"
+        height="2rem" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
         </svg>
       </div>
     </div>
   </div>
 </nav>
 
-<div>
-  <app-dropdown></app-dropdown>
-</div>
+
