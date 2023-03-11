@@ -1,31 +1,56 @@
-<div class="row" *ngIf="!isMobile" >
+<div class="row" *ngIf="!isMobile">
   <div class="col my-3 mx-3" *ngFor="let product of productList">
-    <div class="card" >
-      <img src="..." class="card-img-top" alt="...">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="..." />
       <div class="card-body">
-        <h5 class="card-title">{{product.name}}</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">Some quick example .</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>
-
 </div>
 
-<div class="row" *ngIf="isMobile" >
-  <div class="col-5 my-3 mx-3" *ngFor="let product of productList">
-    <div class="card" >
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
+<div class="row mt-3" *ngIf="isMobile">
+  <div class="mb-3 mx-3" [ngStyle]="" *ngFor="let product of productList">
+    <!-- <div class="card" style="width: 18rem;">
+
+      <div class="card-body col-4">
+        <img src="https://images.pexels.com/photos/15894423/pexels-photo-15894423.jpeg" class="card-img-top" alt="...">
+      </div>
+
+      <div class="card-body col-6">
         <h5 class="card-title">{{product.name}}</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <p class="card-text">{{product.description}} </p>
+        <a href="#" class="btn btn-outline-info btn-sm">Add to cart</a>
+      </div>
+    </div> -->
+
+    <div class="card " style="max-width: 94%; max-height: 10rem;">
+      <div class="row ">
+        <div class="col-4 mx-2 my-2">
+          <img
+            src="https://images.pexels.com/photos/15894423/pexels-photo-15894423.jpeg"
+            style="width: 9rem; height: 9rem;"
+            class="img-fluid rounded-start"
+            alt="..."
+          />
+        </div>
+        <div class="col-7">
+          <div class="card-body" >
+            <h5 class="card-title" >{{ product.name }}</h5>
+            <p class="card-text"><small>{{ product.description }}</small></p>
+
+            <div style="bottom: 0;">
+              <p class="card-text" >
+                <a href="#" class="btn btn-outline-info btn-sm" >Add to cart</a>
+              </p>
+            </div>
+
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
 </div>
-
-
-
-
