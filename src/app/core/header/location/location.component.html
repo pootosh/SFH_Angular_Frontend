@@ -1,0 +1,30 @@
+<div class="accordion accordion-flush" id="accordionFlushExample" >
+  <div class="accordion-item" >
+    <h2 class="accordion-header" id="flush-headingOne" >
+      <button class="accordion-button collapsed" #deliver type="button" [ngStyle]="{'color':collapsed?'black':'darkgrey'}" (click)="testing()" style="background-color: #5B8291;" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <span style="margin-left: 2rem;">Deliver To Area</span>
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse  " style="background-color:#98DAD9; " aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+
+        <!-- <div class=" row">
+          <label for="pinCode" class="col-4 col-form-label ms-3">Pin Code</label>
+          <div class="col-6 mt-2">
+            <input class="form-control form-control-sm" style="max-height: 1.5rem" type="text" placeholder="Pin Code" aria-label=".form-control-sm example">
+          </div>
+        </div> -->
+
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <label for="pinCode" class="ms-3 col-form-label ">Pin Code</label>
+          </div>
+          <div class="col-6 mt-2">
+            <input class="form-control form-control-sm" style="max-height: 1.5rem" type="text" placeholder="" aria-label=".form-control-sm example">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+ </div>

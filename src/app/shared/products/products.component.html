@@ -11,7 +11,7 @@
   </div>
 </div>
 
-<div class="row mt-3" *ngIf="isMobile">
+<div class=" mt-3" *ngIf="isMobile">
   <div class="mb-3 mx-3" [ngStyle]="" *ngFor="let product of productList">
     <!-- <div class="card" style="width: 18rem;">
 
@@ -27,7 +27,7 @@
     </div> -->
 
     <div class="card " style="max-width: 94%; max-height: 10rem;">
-      <div class="row ">
+      <div class="row " >
         <div class="col-4 mx-2 my-2">
           <img
             src="https://images.pexels.com/photos/15894423/pexels-photo-15894423.jpeg"
@@ -37,11 +37,11 @@
           />
         </div>
         <div class="col-7">
-          <div class="card-body" >
-            <h5 class="card-title" >{{ product.name }}</h5>
+          <div class="card-body" style="padding: 0;" >
+            <h6 class="card-title mt-3"  >{{ product.name }}</h6>
             <p class="card-text"><small>{{ product.description }}</small></p>
 
-            <div style="bottom: 0;">
+            <div style="margin-top: 2.8rem;">
               <p class="card-text" >
                 <a href="#" class="btn btn-outline-info btn-sm" >Add to cart</a>
               </p>

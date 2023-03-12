@@ -12,6 +12,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 
 import { DropdownComponent } from './shared/common/dropdown/dropdown.component';
+import { LocationComponent } from './core/header/location/location.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { DropdownComponent } from './shared/common/dropdown/dropdown.component';
     FooterComponent,
     ProductsComponent,
     DropdownComponent,
+    LocationComponent,
   ],
   imports: [
     BrowserModule,
