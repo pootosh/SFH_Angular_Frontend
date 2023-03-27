@@ -1,0 +1,11 @@
+.card {
+  --bs-card-title-spacer-y: 0rem;
+}
+
+.productOnMobile{
+  --bs-gutter-x: 0;
+}
+
+.card-text {
+  font-size: .875em;
+}
