@@ -14,6 +14,8 @@ productList: Product[];
       new Product('Aman', 'Singh', 100, 10, 200),
       new Product('Abhishek', 'Singh', 100, 10, 200),
       new Product('Sahil', 'Yadav', 100, 10, 200),
+      new Product('Aman', 'Singh', 100, 10, 200),
+      new Product('Aman', 'Singh', 100, 10, 200),
     ]
   }
 

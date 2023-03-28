@@ -13,6 +13,8 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { DropdownComponent } from './shared/common/dropdown/dropdown.component';
 import { LocationComponent } from './core/header/location/location.component';
+import { UserComponent } from './core/user/user.component';
+import { CartComponent } from './core/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { LocationComponent } from './core/header/location/location.component';
     ProductsComponent,
     DropdownComponent,
     LocationComponent,
+    UserComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,

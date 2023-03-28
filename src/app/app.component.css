@@ -1,0 +1,11 @@
+.header {
+  position: fixed;
+  z-index:999;
+  width: 100%;
+  top: 0
+}
+
+
+.content{
+  margin-top: 6rem;
+}

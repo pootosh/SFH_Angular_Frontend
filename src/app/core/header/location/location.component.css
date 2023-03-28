@@ -6,6 +6,7 @@
   --bs-accordion-inner-border-radius: 0;
   --bs-accordion-btn-padding-x: .2rem;
   --bs-accordion-btn-padding-y: .2rem;
+  --bs-accordion-btn-focus-box-shadow: 0;
 
 
 }
